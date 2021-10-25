@@ -1,0 +1,26 @@
+\subsection{Task 1.4 DH-convention and PoE-conventions}
+\subsubsection{Relationship}
+
+The orgianal DH-convention is explained in \ref{title:Task1.1} while PoE formulations are presented in \ref{title:Task1.3}
+
+\subsubsection{Comparison}
+%617 (C.6 in MR)
+
+\begin{table}[]
+\begin{tabular}{l|ll}
+ & Advantages & Disadvantages \\ \hline
+DH & Minimal set of parameters ($4n$) & Valid DH-parameter must exist \\
+ &  & Several conventions for assigning link frames \\
+ &  & \begin{tabular}[c]{@{}l@{}}Different variables for revolute joint ($\theta$)\\  and prismatic joints ($d$)\end{tabular} \\
+ &  & \begin{tabular}[c]{@{}l@{}}Reality errors (e.g. manufacturing and tolerances)\\  cause deviating axis' orientation (e.g. not exaclty\\ parallel or intersection at a single comon point)\\ which can lead to ill-conditioned DH-parameters\end{tabular} \\
+PoE & \begin{tabular}[c]{@{}l@{}}Base and end-effector frames can be\\ chosen arbitrarily\end{tabular} & $6n$ parameters \\
+ & No link reference frame neceassary &  \\
+ & \begin{tabular}[c]{@{}l@{}}No need to distiguish between revolute\\ and prismatic joints\end{tabular} &  \\
+ & Screw axis are an intuitive interpretation &  \\
+ & \begin{tabular}[c]{@{}l@{}}Screws of joint axes can be derived from\\ the columns of Jacobian\\ (confiugration-dependent)\end{tabular} & 
+\end{tabular}
+\caption{The advantages and disadvantages comparing DH- and PoE-convention.}
+\label{tab:comparison}
+\end{table}
+
+To conclude the advantages for the PoE representation outweigh the use of $2n$ extra parameters. Also the fact that PoE feels more natural and intuitive prevails it even more.
